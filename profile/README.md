@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:002554,60:0a6ebd,100:00b4d8&height=230&section=header&text=M-PRISM&fontSize=78&fontColor=ffffff&fontAlignY=36&desc=Physics%20of%20Reactors%20%C2%B7%20Integrated%20Simulation%20%26%20Multi-physics&descSize=19&descAlignY=58&animation=fadeIn" alt="M-PRISM banner" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:002554,60:0a6ebd,100:00b4d8&height=230&section=header&text=M-PRISM&fontSize=78&fontColor=ffffff&fontAlignY=36&desc=Physics%20of%20Reactors%20%C2%B7%20Integrated%20Simulation%20and%20Multi-physics&descSize=19&descAlignY=58&animation=fadeIn" alt="M-PRISM banner" width="100%"/>
 
 ### ⚛️ Fast, accurate, open reactor physics, from fission matrices to digital twins
 
