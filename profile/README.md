@@ -106,6 +106,4 @@ Other work in the lab includes OpenMC models of university research reactors (ve
 
 <img src="https://raw.githubusercontent.com/M-PRISM-Colorado-School-of-Mines/.github/main/profile/footer.svg" alt="M-PRISM, Colorado School of Mines" width="100%"/>
 
-<sub>⚛️ Colorado School of Mines · Golden, Colorado</sub>
-
 </div>
