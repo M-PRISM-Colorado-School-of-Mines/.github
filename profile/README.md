@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:002554,60:0a6ebd,100:00b4d8&height=230&section=header&text=M-PRISM&fontSize=78&fontColor=ffffff&fontAlignY=36&desc=Physics%20of%20Reactors%20%C2%B7%20Integrated%20Simulation%20and%20Multi-physics&descSize=19&descAlignY=58&animation=fadeIn" alt="M-PRISM banner" width="100%"/>
+<img src="https://raw.githubusercontent.com/M-PRISM-Colorado-School-of-Mines/.github/main/profile/banner.svg" alt="M-PRISM at the Colorado School of Mines: fast, accurate, open reactor physics" width="100%"/>
 
 ### ⚛️ Fast, accurate, open reactor physics, from fission matrices to digital twins
 
@@ -88,7 +88,9 @@ Other work in the lab includes OpenMC models of university research reactors (ve
 
 | 🇸🇮 **Jožef Stefan Institute** | 🇮🇹 **Politecnico di Milano** | 🎓 **Virginia Tech** |
 |:---:|:---:|:---:|
-| TRIGA Mark-II experiments & validation → [JSI-Mines-Collaboration](https://github.com/JSI-Mines-Collaboration) | Fuel performance, fusion & multi-physics → [PoliMI-Mines-Collaboration](https://github.com/PoliMI-Mines-Collaboration) | Origin of the RAPID code system |
+| TRIGA Mark-II experiments and validation → [JSI-Mines-Collaboration](https://github.com/JSI-Mines-Collaboration) | Fuel performance, fusion and multi-physics → [PoliMI-Mines-Collaboration](https://github.com/PoliMI-Mines-Collaboration) | Origin of the RAPID code system and the fission-matrix lineage |
+| 🇮🇹 **Politecnico di Torino** | 🏛️ **University of Missouri** | |
+| Fission-matrix methods for heat-pipe microreactors | Research-reactor modeling (MURR) | |
 
 </div>
 
