@@ -36,7 +36,7 @@
 | | Focus | In a sentence |
 |---|---|---|
 | 🧮 | **Fission Matrix & Transient Fission Matrix** | Recast neutron transport as a linear eigenvalue problem, so criticality, 3-D flux and full time-dependent kinetics solve in seconds, with no source-convergence headaches. |
-| 🛠️ | **Open-source tooling for OpenMC** | Bringing fission-matrix and kinetics capability to the much larger OpenMC community. |
+| 🛠️ | **Open-source tooling for OpenMC** | Bringing fission-matrix and kinetics capability to the much larger OpenMC community, down to FM coefficients scored natively by OpenMC tallies. |
 | 📚 | **Open reactor model library** | A growing, documented set of OpenMC reactor models that others can run, verify and extend. |
 | 🎯 | **Experimental validation** | Control-rod worth, dosimetry, burnup and kinetics measured at the JSI TRIGA Mark-II (Ljubljana). |
 | 🤖 | **AI/ML acceleration** | Neural networks for thermal-feedback modeling, interpolation and flux reconstruction on top of fission-matrix databases. |
@@ -50,7 +50,7 @@
 
 ```mermaid
 flowchart LR
-    A["⚛️ OpenMC<br/>reactor model"] --> B["🎲 Fixed-source tallies<br/>FM / TFM coefficients"]
+    A["⚛️ OpenMC<br/>reactor model"] --> B["🎲 OpenMC tallies<br/>native FM / TFM coefficients"]
     B --> C[("🗄️ HDF5 database<br/>tfmines")]
     C --> D["⚡ Fast solvers<br/>k-eff · flux · kinetics"]
     D --> E["🛰️ UQ · optimization<br/>digital twins"]
@@ -66,6 +66,7 @@ flowchart LR
 |---|---|---|
 | 📚 [**CSM Open-Source Reactor Model Library**](https://github.com/M-PRISM-Colorado-School-of-Mines/CSM-Open-source-Reactor-Model-Library) | Independent, documented OpenMC models. First release: the **IAEA TECDOC-643** generic 10 MW LEU research reactor. Heat-pipe microreactor, lunar FSP, MSRE, pebble-bed HTGR and Radiant Kaleidos directories are reserved for upcoming models. | ![public](https://img.shields.io/badge/public-2ea44f?style=flat-square) ![MIT](https://img.shields.io/badge/MIT-blue?style=flat-square) |
 | 🧮 **tfmines** | Transient Fission Matrix solver with OpenMC integration: extracts FM tallies from statepoints, solves for k-eff, fission source and importance, propagates coefficient uncertainties, and runs time-dependent kinetics (FM-CRd control rods, β<sub>eff</sub>, Λ, Rossi-α). Python by default, optional OpenMP C++ engine. | ![in development](https://img.shields.io/badge/in_development-f4a261?style=flat-square) |
+| 🧩 **OpenMC-Native-FM-Generation** | Fission-matrix coefficients generated inside OpenMC itself: the cell-born and mesh-born tally filters gain FM coefficient generation with per-cell birth-weight normalization, so the coefficients come straight out of a standard OpenMC run. Built on, and kept in sync with, upstream OpenMC `develop`. | ![in development](https://img.shields.io/badge/in_development-f4a261?style=flat-square) |
 | 🖥️ **slurm-manager** | Small Python library to prepare and submit Slurm jobs on a single-node workstation, built for the group's own compute. | ![in development](https://img.shields.io/badge/in_development-f4a261?style=flat-square) |
 
 Other work in the lab includes OpenMC models of university research reactors (verified code-to-code against MCNP), TRIGA safety-basis modeling, and autonomy for lunar power systems.
