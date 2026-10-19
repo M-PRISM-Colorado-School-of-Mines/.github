@@ -78,6 +78,7 @@ Other work in the lab includes OpenMC models of university research reactors (ve
 - **Experimental validation of 3-D kinetics** on the JSI TRIGA Mark-II, Mascolino, Pungerčič, Snoj & Haghighat, **Progress in Nuclear Energy** 176 (2024)
 - **FM-CRd**: *Development and Validation of New Algorithms for Control Rods Insertion Modeling in RAPID*, Mascolino, Haghighat & Snoj, **Annals of Nuclear Energy** 166 (2022)
 - **Heat-pipe microreactors**: *The Fission Matrix Method for Criticality Search in Heat-Pipe Micro Reactors*, Vita et al., **Annals of Nuclear Energy** (2027)
+- 📝 **Uncertainty quantification** *(preprint, under review)*: *Uncertainty Quantification for the Fission Matrix Method: A Rigorous Mathematical Framework and Computationally Efficient Alternatives*, Mascolino, submitted to **Nuclear Science and Engineering** · [arXiv:2609.33161](https://arxiv.org/abs/2609.33161)
 
 ---
 
