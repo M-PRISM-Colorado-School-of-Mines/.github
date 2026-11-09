@@ -16,13 +16,13 @@
 
 ## 🌟 Who we are
 
-**M-PRISM** is the Reactor Physics Group at the **Colorado School of Mines**, led by [Valerio Mascolino](https://www.vmascolino.com). We develop the computational tools that let reactor designers, regulators and operators get **Monte Carlo accuracy at a fraction of the cost**: validated against real experiments, built on open-source software, and aimed at the next generation of research, advanced and space reactors.
+**M-PRISM** is the Reactor Physics Group at the **Colorado School of Mines**, led by [Valerio Mascolino](https://www.vmascolino.com). We develop the computational tools that let reactor designers, regulators, and operators get **Monte Carlo accuracy at a fraction of the cost**: validated against real experiments, built on open-source software, and aimed at the next generation of research, advanced and space reactors.
 
 <table>
 <tr>
 <td align="center" width="25%"><h3>⚡ 10²–10⁴×</h3><sub>typical speed-up of fission-matrix transport over direct Monte Carlo¹</sub></td>
 <td align="center" width="25%"><h3>🧪 Experiment-first</h3><sub>validated on measured data from the JSI TRIGA Mark-II, not just code-to-code</sub></td>
-<td align="center" width="25%"><h3>🔓 Open by design</h3><sub>OpenMC, Python and C++, with public model libraries</sub></td>
+<td align="center" width="25%"><h3>🔓 Open by design</h3><sub>OpenMC, Python, and C++, with public model libraries</sub></td>
 <td align="center" width="25%"><h3>🌍 Collaborative</h3><sub>JSI Ljubljana · Politecnico di Milano · Virginia Tech heritage</sub></td>
 </tr>
 </table>
@@ -35,14 +35,14 @@
 
 | | Focus | In a sentence |
 |---|---|---|
-| 🧮 | **Fission Matrix & Transient Fission Matrix** | Recast neutron transport as a linear eigenvalue problem, so criticality, 3-D flux and full time-dependent kinetics solve in seconds, with no source-convergence headaches. |
+| 🧮 | **Fission Matrix & Transient Fission Matrix** | Recast neutron transport as a linear eigenvalue problem, so criticality, 3-D flux, and full time-dependent kinetics solve in seconds, with no source-convergence headaches. |
 | 🛠️ | **Open-source tooling for OpenMC** | Bringing fission-matrix and kinetics capability to the much larger OpenMC community, down to FM coefficients scored natively by OpenMC tallies. |
-| 📚 | **Open reactor model library** | A growing, documented set of OpenMC reactor models that others can run, verify and extend. |
-| 🎯 | **Experimental validation** | Control-rod worth, dosimetry, burnup and kinetics measured at the JSI TRIGA Mark-II (Ljubljana). |
-| 🤖 | **AI/ML acceleration** | Neural networks for thermal-feedback modeling, interpolation and flux reconstruction on top of fission-matrix databases. |
-| 🌙 | **Advanced reactors & space** | Heat-pipe microreactors, molten-salt reactors, research-reactor safety bases and lunar fission surface power. |
+| 📚 | **Open reactor model library** | A growing, documented set of OpenMC reactor models that others can run, verify, and extend. |
+| 🎯 | **Experimental validation** | Control-rod worth, dosimetry, burnup, and kinetics measured at the JSI TRIGA Mark-II (Ljubljana). |
+| 🤖 | **AI/ML acceleration** | Neural networks for thermal-feedback modeling, interpolation, and flux reconstruction on top of fission-matrix databases. |
+| 🌙 | **Advanced reactors & space** | Heat-pipe microreactors, molten-salt reactors, research-reactor safety bases, and lunar fission surface power. |
 
-> 🧭 **Status note.** The method foundations (fission matrix, tRAPID kinetics, FM-CRd control rods) are published and experimentally validated. The OpenMC implementations, AI/ML acceleration and advanced-reactor applications below are **active development**, not finished results.
+> 🧭 **Status note.** The method foundations (fission matrix, tRAPID kinetics, and FM-CRd control rods) are published and experimentally validated. The OpenMC implementations, AI/ML acceleration, and advanced-reactor applications below are **active development**, not finished results.
 
 ---
 
@@ -65,7 +65,7 @@ flowchart LR
 | Project | What it does | Status |
 |---|---|---|
 | 📚 [**CSM Open-Source Reactor Model Library**](https://github.com/M-PRISM-Colorado-School-of-Mines/CSM-Open-source-Reactor-Model-Library) | Independent, documented OpenMC models. First release: the **IAEA TECDOC-643** generic 10 MW LEU research reactor. Heat-pipe microreactor, lunar FSP, MSRE, pebble-bed HTGR and Radiant Kaleidos directories are reserved for upcoming models. | ![public](https://img.shields.io/badge/public-2ea44f?style=flat-square) ![MIT](https://img.shields.io/badge/MIT-blue?style=flat-square) |
-| 🧮 **tfmines** | Transient Fission Matrix solver with OpenMC integration: extracts FM tallies from statepoints, solves for k-eff, fission source and importance, propagates coefficient uncertainties, and runs time-dependent kinetics (FM-CRd control rods, β<sub>eff</sub>, Λ, Rossi-α). Python by default, optional OpenMP C++ engine. | ![in development](https://img.shields.io/badge/in_development-f4a261?style=flat-square) |
+| 🧮 **tfmines** | Transient Fission Matrix solver with OpenMC integration: builds HDF5 fission-matrix libraries from OpenMC statepoints, solves for k-eff, fission source, and importance with propagated coefficient uncertainties, and computes kinetics parameters (β<sub>eff</sub>, Λ, and Rossi-α) and slow and fast transients with FM-CRd control rods. Two engines that agree to rounding: Python by default, and a C++ engine (OpenMP, optional MPI) that also runs on its own from an XML input. | ![in development](https://img.shields.io/badge/in_development-f4a261?style=flat-square) |
 | 🧩 **OpenMC-Native-FM-Generation** | Fission-matrix coefficients generated inside OpenMC itself: the cell-born and mesh-born tally filters gain FM coefficient generation with per-cell birth-weight normalization, so the coefficients come straight out of a standard OpenMC run. Built on, and kept in sync with, upstream OpenMC `develop`. | ![in development](https://img.shields.io/badge/in_development-f4a261?style=flat-square) |
 | 🖥️ **slurm-manager** | Small Python library to prepare and submit Slurm jobs on a single-node workstation, built for the group's own compute. | ![in development](https://img.shields.io/badge/in_development-f4a261?style=flat-square) |
 
@@ -89,7 +89,7 @@ Other work in the lab includes OpenMC models of university research reactors (ve
 
 | 🇸🇮 **Jožef Stefan Institute** | 🇮🇹 **Politecnico di Milano** | 🎓 **Virginia Tech** |
 |:---:|:---:|:---:|
-| TRIGA Mark-II experiments and validation → [JSI-Mines-Collaboration](https://github.com/JSI-Mines-Collaboration) | Fuel performance, fusion and multi-physics → [PoliMI-Mines-Collaboration](https://github.com/PoliMI-Mines-Collaboration) | Origin of the RAPID code system and the fission-matrix lineage |
+| TRIGA Mark-II experiments and validation → [JSI-Mines-Collaboration](https://github.com/JSI-Mines-Collaboration) | Fuel performance, fusion, and multi-physics → [PoliMI-Mines-Collaboration](https://github.com/PoliMI-Mines-Collaboration) | Origin of the RAPID code system and the fission-matrix lineage |
 | 🇮🇹 **Politecnico di Torino** | 🏛️ **University of Missouri** | |
 | Fission-matrix methods for heat-pipe microreactors | Research-reactor modeling (MURR) | |
 
@@ -99,7 +99,7 @@ Other work in the lab includes OpenMC models of university research reactors (ve
 
 ## 🚀 Get involved
 
-- 🧑‍🎓 **Students**: we work with PhD, MS and undergraduate researchers across nuclear engineering and computational physics.
+- 🧑‍🎓 **Students**: we work with PhD, MS, and undergraduate researchers across nuclear engineering and computational physics.
 - 🔧 **Contributors**: open an issue or pull request on any public repository.
 - 📬 **Collaborators**: reach out through [vmascolino.com](https://www.vmascolino.com).
 
